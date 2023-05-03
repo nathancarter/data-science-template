@@ -9,6 +9,12 @@ Click the button below!  You'll get a web-based version of Visual Studio Code an
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nathancarter/data-science-template?quickstart=1)
 
+## How do I add files?
+
+You can upload any file (data, scripts, notebooks, etc.) into the Codespace by just dragging it in from your PC.
+
+Drop it into the files list on the left side of the editor.
+
 ## How do write code?
 
 You can create and run both scripts and Jupyter notebooks.

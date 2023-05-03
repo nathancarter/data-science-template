@@ -4,10 +4,11 @@ FROM jupyter/datascience-notebook
 # Package installation steps for the OS need to be done as root
 USER root
 
-# Install additional OS packages (some of which are needed for R/Python packages below)
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
- && apt-get -y install --no-install-recommends \
-    build-essential zlib1g-dev zip texlive-fonts-recommended lmodern cmake
+# If you want any Ubuntu packages installed by default as part of the image, do:
+# (I avoid doing this because it significantly increases container build times.)
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#  && apt-get -y install --no-install-recommends \
+#     PUT PACKAGE NAMES HERE
 
 # Do all other steps using the account the VS Code user will use
 USER jovyan
